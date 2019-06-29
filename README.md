@@ -1,4 +1,4 @@
-# Mura!
+# Moora!
 
 E-commerce website built in Django and Python.
 
