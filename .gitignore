@@ -1,0 +1,5 @@
+db.sqlite3
+.python-version
+*__pycache__*
+static_files/
+TEST-*.xml
