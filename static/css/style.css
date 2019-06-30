@@ -3,38 +3,40 @@ body, html {
     background-color: #ffffff;
     overflow: hidden;
 }
+
 .topnav {
-  overflow: hidden;
-  background-color: #00405d
+    overflow: hidden;
+    background-color: #00405d
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 16px; !important;
-  cursor: pointer;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 16px;
+!important;
+    cursor: pointer;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .topnav-right {
-  float: right;
+    float: right;
 }
 
 .header_top {
     position: relative;
-      margin-top: 5px;
+    margin-top: 5px;
     background-color: #ffffff;
     font-size: 15px;
     line-height: 50px;
@@ -42,35 +44,50 @@ body, html {
     padding: 4px 5px;
 }
 
-.header_top img{
+.header_top img {
     height: 50px;
 }
 
 .header_top .search-container {
-  float: right;
+    float: left;
 }
 
 .header_top input[type=text] {
-  outline-width: 0;
-  padding: 0px 5px;
-  font-size: 15px; !important;
-  border: none;
-  background: #eff0f5;
-    border-radius: 5px;
-    width: 100%;
+    outline-width: 0;
+    padding: 0px 5px;
+    font-size: 15px;
+!important;
+    border: none;
+    background: #eff0f5;
+    border-radius: 3px;
+    width: 80%;
+    float: left;
 }
 
 .header_top .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
+    outline-width: 0;
+    float: left;
+    width: 5%;
+    padding: 15px;
+    background: #ffcc33;
+    color: white;
+    font-size: 20px;
+    border: none;
 }
 
+
+.cart{
+    outline-width: 0;
+    float: left;
+    width: 5%;
+    padding: 15px;
+    background: transparent;
+    color: orange;
+    font-size: 20px;
+    border: none;
+}
+
+
 .header_top .search-container button:hover {
-  background: #ccc;
+    background: #ccc;
 }

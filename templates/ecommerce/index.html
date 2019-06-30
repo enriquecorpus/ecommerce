@@ -14,21 +14,20 @@
     <a href="#Track">Track Order</a>
     <a href="#Signup">Sign Up</a>
     <a href="#Login">Log In</a>
-    <a href="#Cart" class="fa fa-shopping-cart" style="padding-top: 9px"></a>
   </div>
 </div>
 <div class="header_top">
     <div class="container col-12">
         <div class="row">
             <div class="col-2">
-                           <img src="{% static 'images/logo-100px.png' %}" alt="" class="img-fluid topleft">
+                <img src="{% static 'images/logo-100px.png' %}" alt="" class="img-fluid topleft">
             </div>
             <div class="search-container col-10">
                 <form action="/action_page.php" autocomplete="off">
-                    <div class="col-10">
                       <input type="text" placeholder="Search for products" name="search">
-                    </div>
                        <button type="submit"><i class="fa fa-search"></i></button>
+                       <button type="submit" class="ml-1"><i class="fa fa-shopping-cart"></i></button>
+
                 </form>
             </div>
         </div>
