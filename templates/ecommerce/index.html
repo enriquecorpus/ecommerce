@@ -1,3 +1,6 @@
+{% load static bootstrap4 %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_css %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +8,34 @@
     <title>Moora! Buy products in very LOW price.</title>
 </head>
 <body>
-<div>Hello world</div>
+<div class="topnav">
+  <div class="topnav-right">
+    <a href="#search">Start Selling</a>
+    <a href="#Track">Track Order</a>
+    <a href="#about">Sign Up</a>
+    <a href="#about">Log In</a>
+    <a href="#about" class="fa fa-shopping-cart" style="padding-top: 9px"></a>
+  </div>
+</div>
+<div class="header_top">
+    <div class="container col-12">
+        <div class="row">
+            <div class="col-2">
+                           <img src="{% static 'images/logo-100px.png' %}" alt="" class="img-fluid topleft">
+            </div>
+            <div class="search-container col-10">
+                <form action="/action_page.php">
+                    <div class="col-10">
+                      <input type="text" placeholder="Search for products" name="search">
+                    </div>
+                       <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>
