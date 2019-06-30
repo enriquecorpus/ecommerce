@@ -15,7 +15,7 @@ body, html {
     text-align: center;
     padding: 5px 5px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 !important;
     cursor: pointer;
 }
@@ -54,7 +54,7 @@ body, html {
 
 .header_top input[type=text] {
     outline-width: 0;
-    padding: 0px 5px;
+    padding: 0px 10px;
     font-size: 15px;
 !important;
     border: none;
@@ -74,19 +74,6 @@ body, html {
     font-size: 20px;
     border: none;
 }
-
-
-.cart{
-    outline-width: 0;
-    float: left;
-    width: 5%;
-    padding: 15px;
-    background: transparent;
-    color: orange;
-    font-size: 20px;
-    border: none;
-}
-
 
 .header_top .search-container button:hover {
     background: #ccc;
