@@ -23,5 +23,6 @@ urlpatterns = [
     path('', django.views.generic.TemplateView.as_view(template_name='ecommerce/index.html'),
          name='home'),
     path('registration/', include(('registration.urls', 'registration'), namespace='registration')),
+    path('products/', include(('products.urls', 'products'), namespace='products')),
 ]
 
