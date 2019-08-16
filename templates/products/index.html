@@ -12,7 +12,7 @@
 <div class="row">
         <div class="col-12 mt-5 form-group">
             {% bootstrap_messages %}
-            <form action="" id="product_action" data-agents-url="/ajax/load-agents/" method="post" class="form">
+            <form action="{% url 'products:products_product'%}" id="product_action" method="post" class="form">
                 {% csrf_token %}
                 {% bootstrap_form form layout='horizontal' %}
                 <div class="float text-center">

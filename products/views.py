@@ -1,3 +1,4 @@
+import django.forms
 import django.views.decorators.http
 import products.models
 import django.http
@@ -55,6 +56,9 @@ class Actions:
 
 
 class ProductsForm(django.forms.ModelForm):
+    category = django.forms.ModelChoiceField(
+        queryset=products.models.Category.objects.all())
+
     class Meta:
         model = products.models.Product
         fields = '__all__'
@@ -75,9 +79,17 @@ def product_action(request):
 
 
 def product(request):
+    initial_form_data = {}
     if request.method == 'GET':
-        initial_form_data = {}
         return django.shortcuts.render(request, 'products/index.html',
                                        context={'form': ProductsForm(initial=initial_form_data)})
     if request.method == "POST":
-        pass
+        data = request.POST.dict()
+        form = ProductsForm(data, initial=initial_form_data)
+        if not form.is_valid():
+            return django.shortcuts.render(request, 'products/index.html',
+                                           context={'form': ProductsForm(initial=initial_form_data)})
+        initial_form_data['success'] = 'true'
+        form.save()
+        return django.shortcuts.render(request, 'products/index.html',
+                                       context={'form': ProductsForm(initial=initial_form_data)})
