@@ -23,8 +23,9 @@
                 <img src="{% static 'images/logo-100px.png' %}" alt="" class="img-fluid topleft">
             </div>
             <div class="search-container col-10">
-                <form action="" autocomplete="off">
-                      <input type="text" placeholder="Search for products" name="search">
+                <form action="{% url 'products:products_search' %}"method="post" autocomplete="off">
+                     {% csrf_token %}
+                      <input type="text" placeholder="Search for products" name="search_string">
                        <button type="submit"><i class="fa fa-search"></i></button>
                        <button type="submit" class="ml-1"><i class="fa fa-shopping-cart"></i></button>
 

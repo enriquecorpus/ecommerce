@@ -21,7 +21,7 @@ from django.urls import path
 urlpatterns = [
     path('JsKahs8hsdnaKlashjhs6/admin/', django.contrib.admin.site.urls),
     path('', django.views.generic.TemplateView.as_view(template_name='ecommerce/index.html'),
-         name='home'),
+             name='home'),
     path('registration/', include(('registration.urls', 'registration'), namespace='registration')),
     path('products/', include(('products.urls', 'products'), namespace='products')),
 ]
