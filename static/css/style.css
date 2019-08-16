@@ -67,7 +67,8 @@ body, html {
 .header_top .search-container button {
     outline-width: 0;
     float: left;
-    width: 5%;
+    width: 8%;
+    width: calc(10% - 7.5px);
     padding: 15px;
     background: #ffcc33;
     color: white;
@@ -78,3 +79,12 @@ body, html {
 .header_top .search-container button:hover {
     background: #ccc;
 }
+
+
+
+@media screen and (max-width:600px) {
+.header_top .search-container button {
+    font-size: 10px;
+}
+}
+
